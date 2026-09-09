@@ -1,0 +1,16 @@
+1. Escrever o polinômio característico do modo que o parâmetro de interesse (K) apareça claramente (p.ex.: 1 + G(s)H(s) = 1 + KP(s)))
+2. Fatorar o polinômio P(s) em termos dos nP pólos e nZ zeros. 
+3. Assinalar os pólos e zeros de malha aberta no plano s com os símbolos correspondentes. (X = Pólos e O = Zeros. O LGR começa nos pólos e termina nos zeros.)
+4. Assinalar os segmentos do eixo real que são LGR. O LGR se situa à esquerda de um número
+ímpar de pólos e zeros 
+5. Determinar o número de lugares separados, LS (seguimentos de curva que compõe o LGR).LS = nP, quando np ≥ nZ;
+6. O LGR é simétrico com relação ao eixo real (eixo horizontal).Basta desenhar a parte acima do eixo real e depois espelhar o esboço. 
+7. (nP - nZ) seguimentos de um LGR prosseguem em direção aos zeros infinitos ao longo de assíntotas centralizadas em σA e com ângulos φA. 
+8. Determinar o ponto de saída (se existir) sobre o eixo real (K=p(s) e depois dp(s)/ds=0)
+9. Utilizando o critério de Routh-Hurwirtz, determinar o ponto no qual o eixo imaginário é cruzado (se isso ocorrer). 
+10. Usando a condição de ângulo, determinar o ângulo de partida para os pólos complexos e o ângulo de chegada para os zeros complexos. ∠ P(s) =180 ± q360 em s = pj ou zi. Ângulo de Partida = 180° - (∑θi) + (∑φj) ; Ângulo de Chegada = 180° - (∑φi) + (∑θj). onde: θi = ângulos de vetores partindo dos demais pólos até o pólo em questão. φj = ângulos de vetores partindo dos demais zeros até o pólo em questão
+
+
+Se houver ponto s a ser analisado (se pertence ou não à LGR):
+11. Determinar a localização das raízes que satisfazem o critério do ângulo de fase.
+12. Determinar o valor do parâmetro K na raiz si. 
