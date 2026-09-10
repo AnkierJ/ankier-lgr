@@ -802,37 +802,6 @@ if current_step >= 10:
                 theta = ((theta + 180) % 360) - 180
                 angulos_chegada[zk] = theta
 
-st.markdown("---")
-
-st.subheader("Leitura acumulada do LGR")
-fig_top = desenhar_grafico_acumulado(
-    current_step=current_step,
-    polos=polos,
-    zeros=zeros,
-    segs=segs,
-    sigma_a=sigma_a,
-    angs=angs,
-    bk_pts=bk_pts,
-    cruzs=cruzs,
-    todas_raizes=todas_raizes,
-    xl=xl,
-    yl=yl,
-    lim_usr=lim_usr,
-    show_segments=show_segments,
-    show_asymptotes=show_asymptotes,
-    show_breakaway=show_breakaway,
-    show_crossings=show_crossings,
-    show_lgr_background=show_lgr_background,
-    show_angles=show_angles,
-    usar_ponto=usar_ponto,
-    s_test=s_test,
-    pert=pert,
-    angulos_partida=angulos_partida,
-    angulos_chegada=angulos_chegada,
-)
-st.pyplot(fig_top)
-plt.close(fig_top)
-
 # ============================================================
 # Passo 1 - Equacao Caracteristica
 # ============================================================
@@ -1485,4 +1454,35 @@ if current_step == 12 and usar_ponto:
                        rf"$K = {K_calc:.6f}$ (referência)")
     else:
         st.error("Não foi possível calcular $K$: o ponto coincide com um zero.")
+
+st.markdown("---")
+
+st.subheader("Leitura acumulada do LGR")
+fig_top = desenhar_grafico_acumulado(
+    current_step=current_step,
+    polos=polos,
+    zeros=zeros,
+    segs=segs,
+    sigma_a=sigma_a,
+    angs=angs,
+    bk_pts=bk_pts,
+    cruzs=cruzs,
+    todas_raizes=todas_raizes,
+    xl=xl,
+    yl=yl,
+    lim_usr=lim_usr,
+    show_segments=show_segments,
+    show_asymptotes=show_asymptotes,
+    show_breakaway=show_breakaway,
+    show_crossings=show_crossings,
+    show_lgr_background=show_lgr_background,
+    show_angles=show_angles,
+    usar_ponto=usar_ponto,
+    s_test=s_test,
+    pert=pert,
+    angulos_partida=angulos_partida,
+    angulos_chegada=angulos_chegada,
+)
+st.pyplot(fig_top)
+plt.close(fig_top)
 
